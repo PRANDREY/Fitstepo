@@ -45,3 +45,11 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+@Composable
+fun HelloNam(name: String) {
+    Text(
+        text = "Hello $name!",
+
+    )
+}
