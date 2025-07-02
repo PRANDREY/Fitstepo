@@ -3,5 +3,6 @@
     <color name="card_yellow">#FFF38A</color>
     <color name="card_purple">#EAD8FC</color>
     <color name="card_blue">#E0F3FA</color>
-    <color name="selected_day_bg">#D1ECCF</color>
+    <color name="colors">#D1ECCF</color>
+    <color name="black">#000000</color>
 </resources>

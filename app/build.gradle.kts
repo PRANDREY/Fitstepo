@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.fitstepo"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.fitstepo"
@@ -42,6 +42,7 @@ android {
 dependencies {
 
     implementation(libs.appcompat)
+    implementation(libs.androidx.constraintlayout)
     implementation(libs.material)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
