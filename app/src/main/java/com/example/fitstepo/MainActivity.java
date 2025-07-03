@@ -15,11 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
         progressFill = findViewById(R.id.progress_fill);
 
-        // Пример: задать прогресс = 100 пикселей высоты
         setProgressHeight(100);
     }
 
-    // Метод для изменения высоты прогресс-бара
     private void setProgressHeight(int heightPx) {
         ViewGroup.LayoutParams params = progressFill.getLayoutParams();
         params.height = heightPx;
