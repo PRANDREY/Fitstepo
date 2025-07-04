@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitstepo"
         tools:targetApi="31">
+        <activity android:name=".WorkoutScheduleActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -19,6 +20,7 @@
             android:theme="@style/Theme.Fitstepo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
