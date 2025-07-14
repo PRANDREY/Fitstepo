@@ -13,8 +13,8 @@
         android:id="@+id/profileImage"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="42dp"
         android:src="@drawable/profile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -58,7 +58,7 @@
         android:id="@+id/caloriesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="34dp"
         android:text="1 883 Kcal"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -377,7 +377,7 @@
         android:text="My Plan"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintTop_toBottomOf="@id/exercisesLayout"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"/>
@@ -391,11 +391,17 @@
         android:textColor="#777"
         app:layout_constraintTop_toBottomOf="@id/myPlanText"
         app:layout_constraintStart_toStartOf="@id/myPlanText"/>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="410dp"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

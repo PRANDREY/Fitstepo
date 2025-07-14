@@ -40,18 +40,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
         <ImageView
-            android:id="@+id/Back"
+            android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/ic_back"
-            android:textSize="14sp"
-            android:textColor="#0000FF"
             app:layout_constraintTop_toTopOf="@id/day_of_week"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="320dp" />
+
         <TextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
             android:id="@+id/workouts_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="11 Workouts"
+            android:text="4 Workouts"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
