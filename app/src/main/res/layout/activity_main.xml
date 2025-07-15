@@ -16,6 +16,8 @@
         android:layout_marginStart="19dp"
         android:layout_marginTop="42dp"
         android:src="@drawable/profile"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,12 +36,11 @@
         android:id="@+id/dateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Friday, 4 July"
+        android:text=""
         android:textColor="#777"
         android:textSize="19sp"
         app:layout_constraintStart_toStartOf="@id/helloText"
         app:layout_constraintTop_toBottomOf="@id/helloText" />
-
     <ImageView
         android:id="@+id/calendarButton"
         android:layout_width="40dp"
@@ -380,7 +381,7 @@
         android:layout_marginTop="40dp"
         app:layout_constraintTop_toBottomOf="@id/exercisesLayout"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"/>
+        android:layout_marginStart="19dp"/>
 
     <TextView
         android:id="@+id/planDate"

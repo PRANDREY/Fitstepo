@@ -4,9 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         calendarButton = findViewById(R.id.calendarButton);
         bottomNavigation = findViewById(R.id.bottomNavigation);
 
+        TextView dateText = findViewById(R.id.dateText);
+        dateText.setText(DateHelper.getFormattedDate());
 
         setProgressHeight(100);
 
@@ -30,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, WorkoutScheduleActivity.class);
             startActivity(intent);
         });
-
 
         bottomNavigation.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -52,16 +54,15 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             } else if (itemId == R.id.nav_heart) {
-                Intent intent = new Intent(MainActivity.this, DailyOverviewActivity.class);
-                startActivity(intent);
+                Fragment overviewFragment = new DailyOverviewFragment();
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, overviewFragment)
+                        .commit();
                 return true;
             }
 
             return false;
         });
-
-
-
     }
 
     private void setProgressHeight(int heightPx) {
