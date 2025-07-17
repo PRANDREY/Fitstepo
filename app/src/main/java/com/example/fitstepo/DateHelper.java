@@ -13,7 +13,7 @@ public class DateHelper {
         return dayFormat.format(new Date());
     }
     public static String getDayAndMonth() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("d MMMM", Locale.ENGLISH);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy MMMM", Locale.ENGLISH);
         return dateFormat.format(new Date());
     }
 }

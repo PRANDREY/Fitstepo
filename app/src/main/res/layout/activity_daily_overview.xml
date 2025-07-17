@@ -96,12 +96,17 @@
             android:layout_marginStart="8dp">
 
             <TextView
-                android:layout_width="145dp"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:text="Calories"
                 android:textSize="14sp"
                 android:layout_marginTop="8dp"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
             <ImageView
+                android:layout_marginEnd="13dp"
                 android:layout_marginTop="9dp"
                 android:layout_width="15dp"
                 android:layout_height="20dp"
@@ -117,10 +122,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="40dp">
             <TextView
+                android:id="@+id/kcalText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:text="620.68"
+                android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"/>
@@ -153,12 +159,17 @@
             android:layout_marginStart="8dp">
 
             <TextView
-                android:layout_width="145dp"
+                android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:text="Heart"
                 android:textSize="14sp"
                 android:layout_marginTop="8dp"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
             <ImageView
+                android:layout_marginEnd="9dp"
                 android:layout_marginTop="9dp"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
@@ -187,10 +198,11 @@
             android:layout_marginBottom="8dp"
             android:layout_marginTop="40dp">
             <TextView
+                android:id="@+id/heartRateText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:text="620.68"
+                android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"/>
@@ -198,7 +210,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kcal"
+                android:text="Mbp"
                 android:textSize="12sp"/>
 
         </LinearLayout>
@@ -224,16 +236,20 @@
             android:layout_marginStart="8dp">
 
             <TextView
-                android:layout_width="145dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="Steps"
                 android:textSize="14sp"
                 android:layout_marginTop="8dp"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
             <ImageView
                 android:layout_marginTop="9dp"
+                android:layout_marginEnd="10dp"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/cup"
                 android:background="@drawable/ic_run_blue"
                 android:padding="8dp"/>
 
@@ -247,10 +263,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="40dp">
             <TextView
+                android:id="@+id/stepsText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:text="1240"
+                android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"/>
